@@ -2,12 +2,12 @@ import random
 import string
 
 def generate_simple_password():
-    """Generate a simple password with 12 characters"""
+    """Generate a simple password with 8 characters"""
     simple_password = ''.join(random.choices(string.ascii_letters + string.digits, k=12))
     return simple_password
 
 def generate_complex_password():
-    """Generate a complex password with 16 characters including uppercase, lowercase, digits, and special characters"""
+    """Generate a complex password with 12 characters including uppercase, lowercase, digits, and special characters"""
     complex_password = ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation, k=16))
     return complex_password
 
